@@ -2,8 +2,8 @@ package com.example.demogroovyapirest.controllers
 
 import com.example.demogroovyapirest.models.Hero
 import com.example.demogroovyapirest.services.ErrorsService
-import javax.transaction.Transactional
 
+import org.slf4j.Logger
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping('errores')
 class ErroresController {
 
+	Logger logger = LoggerFactory.getLogger(ErroresController.class);
+	
 	@Autowired
 	ErrorsService errorsService
 
@@ -35,11 +37,11 @@ class ErroresController {
 					elem.id=valorFueraClojure
 					elem  // Return user object so new list contains user objects!
 				}
-
-				println "Tipo lista: ${item}"
+				
+				logger.info("Tipo lista: ${item}")
 			}
 
-			println "${i}. ${item.key} - ${item.value}"
+			logger.info("${i}. ${item.key} - ${item.value}")
 		};
 
 		return myMap
