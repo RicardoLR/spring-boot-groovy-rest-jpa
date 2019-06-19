@@ -19,6 +19,7 @@ HTML jacoco report -> build/jacocoHtml/index.html
 
 "Versiones compatibles entre plugins": https://docs.sonarqube.org/display/PLUG/Plugin+Version+Matrix
 
+`docker run -d -p 9000:9000 sonarqube:6.7-community`
 `docker run -d --name sonarqube6-7 -p 9000:9000 sonarqube:6.7-community`
 
 "Copy plugin to docker container": 
