@@ -22,7 +22,7 @@ HTML jacoco report -> build/jacocoHtml/index.html
 ## execution sonar docker
 
 "Versiones compatibles entre plugins": https://docs.sonarqube.org/display/PLUG/Plugin+Version+Matrix
-
+"Dowload http://www.sonarplugins.com/groovy"
 ```
 docker run -d -p 9000:9000 sonarqube:6.7-community
 docker run -d --name sonarqube6-7 -p 9000:9000 sonarqube:6.7-community
