@@ -1,4 +1,4 @@
-# project Spring boot 2 with groovy
+# Project Spring boot 2 with groovy, sonar y jacoco
 
 
 ## execution with gradle wrapper
